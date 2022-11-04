@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "tfnn"
+version = "0.1.0"
+description = ""
+authors = ["Nicholas Lai Jin Yung <nicklai88@live.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+mnist = "tfnn.mnist:start"
+gym = "tfnn.gym:start"
+att = "tfnn.attention:start"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+tensorflow = "^2.10.0"
+tensorflow-datasets = "^4.7.0"
+matplotlib = "^3.6.1"
+numpy = "^1.23.4"
+gym = "^0.26.2"
+pygame = "^2.1.2"
+ipython = "^8.5.0"
+tensorflow-text = "^2.10.0"
+einops = "^0.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

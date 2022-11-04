@@ -1,0 +1,5 @@
+.venv
+.vscode
+logs
+models
+tfnn/__pycache__/*
